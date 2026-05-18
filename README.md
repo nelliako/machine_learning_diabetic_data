@@ -19,7 +19,8 @@ The goal of this study is to forecast early hospital readmissions for diabetic p
 3. **Pipeline Construction:** Handled heterogeneous data using a scikit-learn `ColumnTransformer`. Implemented mode imputation (`SimpleImputer`) and `OneHotEncoder` for categorical variables, and `StandardScaler` for numerical features.
 4. **Hyperparameter Tuning:** Utilized 3-fold, 3-repeat stratified cross-validation (`RepeatedStratifiedKFold` with `GridSearchCV`) optimized for the AUC-ROC metric.
 
-<img width="484" height="701" alt="Screenshot 2026-05-18 at 12 05 26" src="https://github.com/user-attachments/assets/3322443f-39b7-4d38-ae26-8decb77d5d10" />
+<img width="479" height="716" alt="Screenshot 2026-05-18 at 12 07 48" src="https://github.com/user-attachments/assets/317b74ea-1ed8-4a1a-96f1-9cce6a524779" />
+
 
 
 ## Model Performance & Key Results
@@ -27,7 +28,6 @@ The goal of this study is to forecast early hospital readmissions for diabetic p
 Four machine learning architectures were developed and tested using scikit-learn pipelines with class weighting to address the severe class imbalance:
 
 <img width="1175" height="638" alt="Screenshot 2026-05-18 at 12 06 47" src="https://github.com/user-attachments/assets/59219bdd-d353-48b1-9531-014e01e85a70" />
-
 
 <img width="1202" height="670" alt="Screenshot 2026-05-18 at 12 06 09" src="https://github.com/user-attachments/assets/2987ccef-6866-41da-8b65-056fded55280" />
 
