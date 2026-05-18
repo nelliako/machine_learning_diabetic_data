@@ -19,16 +19,20 @@ The goal of this study is to forecast early hospital readmissions for diabetic p
 3. **Pipeline Construction:** Handled heterogeneous data using a scikit-learn `ColumnTransformer`. Implemented mode imputation (`SimpleImputer`) and `OneHotEncoder` for categorical variables, and `StandardScaler` for numerical features.
 4. **Hyperparameter Tuning:** Utilized 3-fold, 3-repeat stratified cross-validation (`RepeatedStratifiedKFold` with `GridSearchCV`) optimized for the AUC-ROC metric.
 
+<img width="484" height="701" alt="Screenshot 2026-05-18 at 12 05 26" src="https://github.com/user-attachments/assets/3322443f-39b7-4d38-ae26-8decb77d5d10" />
+
+
 ## Model Performance & Key Results
 
 Four machine learning architectures were developed and tested using scikit-learn pipelines with class weighting to address the severe class imbalance:
 
-| Model | Accuracy | AUC-ROC | Recall | Precision |
-| :--- | :---: | :---: | :---: | :---: |
-| **XGBoost** | 0.338 | **0.679** | 0.897 | Low |
-| **Random Forest** | 0.283 | 0.660 | **0.911** | Low |
-| **Logistic Regression** (Baseline) | 0.674 | 0.642 | 0.511 | 0.169 |
-| **Deep Neural Network (DNN)** | **0.854** | 0.650 | 0.153 | **0.240** |
+<img width="1175" height="638" alt="Screenshot 2026-05-18 at 12 06 47" src="https://github.com/user-attachments/assets/59219bdd-d353-48b1-9531-014e01e85a70" />
+
+
+<img width="1202" height="670" alt="Screenshot 2026-05-18 at 12 06 09" src="https://github.com/user-attachments/assets/2987ccef-6866-41da-8b65-056fded55280" />
+
+<img width="1236" height="635" alt="Screenshot 2026-05-18 at 12 06 26" src="https://github.com/user-attachments/assets/fac82513-3ed6-41b8-a8b0-2f39e5dd8b3b" />
+
 
 ### Key Takeaways:
 - **Top Performer:** **XGBoost** achieved the highest overall discriminative performance with an AUC-ROC of **0.679**, outperforming the original study's baseline (0.667) and showing a statistically significant improvement over Logistic Regression ($p = 0.019$).
