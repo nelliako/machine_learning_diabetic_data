@@ -12,7 +12,7 @@ The goal of this study is to forecast early hospital readmissions for diabetic p
 - **Target Variable:** 30-day readmission status (Class 1 = Readmitted within 30 days, Class 0 = Not readmitted).
 - **Class Imbalance:** Significant skew, with an 11.2% base readmission rate (72,273 non-readmissions vs. 9,139 readmissions in the training set).
 
-## Methodology & Preprocessing
+## Methodology 
 Extract from the presentation:
 https://www.loom.com/share/29ecfec08e6b4da6adc332b3d45f9afb
 1. **Data Cleaning:** Replaced missing markers (`?`) with `NaN`. Features with excessive missingness (`weight` at 97%, `payer_code` at 40%) and single-drug columns were excluded.
