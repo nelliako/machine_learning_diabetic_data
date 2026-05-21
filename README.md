@@ -13,6 +13,8 @@ The goal of this study is to forecast early hospital readmissions for diabetic p
 - **Class Imbalance:** Significant skew, with an 11.2% base readmission rate (72,273 non-readmissions vs. 9,139 readmissions in the training set).
 
 ## Methodology & Preprocessing
+Extract from the presentation:
+https://www.loom.com/share/29ecfec08e6b4da6adc332b3d45f9afb
 1. **Data Cleaning:** Replaced missing markers (`?`) with `NaN`. Features with excessive missingness (`weight` at 97%, `payer_code` at 40%) and single-drug columns were excluded.
 2. **Feature Engineering:** - Grouped ICD-9 diagnosis codes into clinical categories (e.g., Circulatory, Respiratory, Diabetes).
    - Generated rolling/cumulative historical metrics (`cum_sum`) for prior inpatient visits, total medications, and days in hospital to evaluate longitudinal care intensity without introducing temporal data leakage.
